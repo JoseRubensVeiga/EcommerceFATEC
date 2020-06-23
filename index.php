@@ -1,3 +1,8 @@
 <?php
+session_start();
 
-echo "Hello, World!";
+if (isset($_SESSION['logado'])) {
+  header('Location: inicio.php');
+}else {
+  header('Location: login.php');
+}

@@ -1,0 +1,10 @@
+.login-body {
+  background-image: radial-gradient(#8263e6, #411db6);
+}
+
+.login-body form {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 5px 4px 19px #331792;
+}
