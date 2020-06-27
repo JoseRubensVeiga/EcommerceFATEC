@@ -1,11 +1,13 @@
 <?php include_once('./sessao.php'); ?>
 
 <html lang="pt-BR">
+
 <head>
   <title>Login</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body class="login-body">
   <div class="container-fluid h-100">
     <div class="row justify-content-center align-items-center h-100">
@@ -33,8 +35,8 @@
       </div>
     </div>
   </div>
-  <script src="js/script.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>

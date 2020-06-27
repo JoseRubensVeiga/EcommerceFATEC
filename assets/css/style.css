@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.login-body {
+  background-image: radial-gradient(#8263e6, #411db6);
+}
+
+.login-body form {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 5px 4px 19px #331792;
+}
+
+.cta-index {
+  background-image: linear-gradient(#00000090, #00000090),
+    url(../wallpaper-1.jpg);
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-y: 652px;
+}
+
+.footer {
+  background-color: #222;
+  margin-top: auto;
+  bottom: 0;
+  width: 100%;
+  color: #f1f1f1;
+  padding: 30px;
+}
+
+.box-colors-container {
+  display: flex;
+}
+
+.box-color {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products-container .card {
+  margin: 10px;
+  border-radius: 0;
+}
+
+.products-container .card h5 {
+  display: inline;
+}
+
+.products-container .card img,
+.products-container .card h5 {
+  cursor: pointer;
+}
+
+.sidebar {
+  background-color: #fff;
+  min-height: 100vh;
+  width: 270px;
+  padding: 15px;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.icone {
+  font-size: 22px !important;
+}
+
+.icone-excluir {
+  color: rgb(158, 25, 25);
+}
+
+.icone-editar {
+  color: blue;
+}
+
+.simple-button {
+  background: none;
+  border: none;
+}

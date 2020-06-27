@@ -27,10 +27,11 @@ function verificarLogin()
     $_SESSION['user'] = $user;
     $_SESSION['logado'] = true;
     header('Location: index.php');
-    
+    exit;
   } else {
     $_SESSION['feedback'] = "Login ou senha incorretos";
     header('Location: index.php');
+    exit;
   }
 }
 
@@ -38,4 +39,5 @@ if (requestIsValid()) {
   verificarLogin();
 } else {
   header('Location: index.php');
+  exit;
 }
