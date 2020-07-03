@@ -8,12 +8,11 @@ include('app/consulta-produtos.php');
 $comPesquisa = false;
 
 if (isset($_GET['descricao'])) {
-  $_produtos = consultarProdutosDescricao($_GET['descricao']);
+  $_produtos = consultarProdutosDescricao(trim($_GET['descricao']));
   $comPesquisa = true;
 } else {
   $_produtos = consultarProdutos();
 }
-
 ?>
 
 <!DOCTYPE html>
