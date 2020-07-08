@@ -29,7 +29,13 @@ if (isset($_GET['descricao'])) {
 
 <body>
   <?php include_once('./parts/navbar.php'); ?>
-  <div class="cta-index">Página inicial</div>
+  <div class="cta-index">
+    <?php if ($comPesquisa) : ?>
+    Resultado da pesquisa "<?php echo $_GET['descricao']; ?>"
+    <?php else : ?>
+    Página inicial
+    <?php endif; ?>
+  </div>
   <div class="row p-5">
     <div class="col-3">
       <?php include_once('./parts/filtro.php'); ?>
@@ -61,7 +67,9 @@ if (isset($_GET['descricao'])) {
         </div>
         <?php endforeach; ?>
       </div>
+      <?php if ($comPesquisa) : ?>
       <a href="index.php" class="text-danger ">Voltar</a>
+      <?php endif; ?>
       <?php endif; ?>
     </div>
   </div>
